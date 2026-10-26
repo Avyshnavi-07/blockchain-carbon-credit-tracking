@@ -1,0 +1,15 @@
+[
+  "function admin() view returns (address)",
+  "function nextCreditId() view returns (uint256)",
+  "function authorizedIssuers(address) view returns (bool)",
+  "function setIssuer(address issuer, bool authorized)",
+  "function registerCredit(string projectName, address initialOwner, uint256 quantity, string documentHash) returns (uint256)",
+  "function getCredit(uint256 creditId) view returns (tuple(uint256 id,string projectName,address issuer,address owner,uint256 quantity,uint256 registeredAt,uint256 retiredAt,bool retired,string documentHash,string retirementPurpose))",
+  "function verifyOwnership(uint256 creditId, address account) view returns (bool)",
+  "function getOwnershipHistory(uint256 creditId) view returns (address[])",
+  "function transferCredit(uint256 creditId, address newOwner)",
+  "function retireCredit(uint256 creditId, string purpose)",
+  "event CreditRegistered(uint256 indexed creditId,address indexed issuer,address indexed owner,uint256 quantity,string projectName,string documentHash)",
+  "event CreditTransferred(uint256 indexed creditId,address indexed from,address indexed to)",
+  "event CreditRetired(uint256 indexed creditId,address indexed owner,uint256 quantity,string purpose,uint256 retiredAt)"
+]

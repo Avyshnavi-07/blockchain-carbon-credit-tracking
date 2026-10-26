@@ -1,0 +1,23 @@
+{
+  "name": "carbon-credit-tracker",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "description": "Wallet-connected prototype for tracking carbon-credit issuance, transfers, and retirement on an EVM blockchain.",
+  "scripts": {
+    "dev": "vite --host 0.0.0.0",
+    "chain": "hardhat node",
+    "build": "vite build",
+    "preview": "vite preview"
+  },
+  "dependencies": {
+    "ethers": "^6.15.0"
+  },
+  "devDependencies": {
+    "@types/node": "^22.0.0",
+    "hardhat": "^3.21.0",
+    "tsx": "^4.20.5",
+    "typescript": "~5.8.3",
+    "vite": "^7.1.7"
+  }
+}
